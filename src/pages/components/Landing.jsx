@@ -10,9 +10,15 @@ export default function Landing() {
   return (
     <main className="bg-[#FAFAFA] flex flex-col items-center font-inter">
       <Navbar />
-      <Home />
-      <Investments />
-      <Catches />
+      <section id="about">
+        <Home />
+      </section>
+      <section id="services">
+        <Investments />
+      </section>
+      <section id="how-it-works">
+        <Catches />
+      </section>
       <footer className="w-full">
         <div className="sm:hidden flex mt-2">
           <FooterMobile />

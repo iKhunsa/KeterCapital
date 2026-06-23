@@ -8,4 +8,7 @@
   body {
     @apply font-[Inter];
   }
+  html {
+    scroll-behavior: smooth;
+  }
 }
