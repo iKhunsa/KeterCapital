@@ -15,19 +15,19 @@ export default function FooterDesktop() {
 
   return (
     <div className="w-full h-[374px] flex justify-between items-center">
-      <div className="flex gap-x-28 lg:w-1/2">
-        <div className="w-52 h-28 flex flex-col gap-y-9">
-          <h1 className=" text-lg text-[#242323] ">Find us:</h1>
+      <div className="flex gap-x-16 lg:w-2/3">
+        <div className="w-40 h-28 flex flex-col gap-y-9">
+          <h1 className="text-lg text-[#242323]">Find us:</h1>
           <div className="flex flex-col">
-            <Link href="https://www.linkedin.com/company/assetrock" target="_blank" rel="noopener noreferrer" className=" text-sm">
+            <Link href="https://www.linkedin.com/company/assetrock" target="_blank" rel="noopener noreferrer" className="text-sm">
               LinkedIn
             </Link>
-            <Link href="https://t.me/iKhunsa" target="_blank" rel="noopener noreferrer" className=" text-sm">
+            <Link href="https://t.me/iKhunsa" target="_blank" rel="noopener noreferrer" className="text-sm">
               Telegram
             </Link>
           </div>
         </div>
-        <div className="w-52 h-28 flex flex-col gap-y-9 ">
+        <div className="w-48 h-28 flex flex-col gap-y-9">
           <h1 className="text-lg">Contacts:</h1>
           <div className="flex items-center gap-x-2">
             <Link href="mailto:business@assetrock.io" className="text-sm">
@@ -40,6 +40,20 @@ export default function FooterDesktop() {
             >
               {copied ? <IoCheckmarkOutline size={14} /> : <IoCopyOutline size={14} />}
             </button>
+          </div>
+        </div>
+        <div className="w-48 h-28 flex flex-col gap-y-9">
+          <h1 className="text-lg">Insights:</h1>
+          <div className="flex flex-col gap-y-1">
+            <Link href="/blog/what-is-an-otc-crypto-desk" className="text-sm text-[#A7A4A4] hover:text-black transition-colors">
+              What is an OTC Crypto Desk?
+            </Link>
+            <Link href="/blog/crypto-to-fiat-for-institutions" className="text-sm text-[#A7A4A4] hover:text-black transition-colors">
+              Crypto-to-Fiat for Institutions
+            </Link>
+            <Link href="/blog/latam-crypto-liquidity" className="text-sm text-[#A7A4A4] hover:text-black transition-colors">
+              Crypto Liquidity in LATAM
+            </Link>
           </div>
         </div>
       </div>
